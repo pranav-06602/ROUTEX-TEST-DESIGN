@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
    
 }
 :root{
@@ -28,6 +27,9 @@ nav img{
     font-size:15px;
     font-weight: 700;
 }
+.navbar-nav a{
+    font-size: 17px;
+}
 
 .contact-no{
     color:  rgb(4, 29, 4);
@@ -36,6 +38,7 @@ nav img{
 .hero-img{
     width: 100%;
     min-height: 90vh;
+    max-height: 700px;
     object-fit: cover;
 }
 
@@ -55,10 +58,10 @@ nav img{
     margin: 10px auto 0;
 }
 .overlay .highlight{
-    color: #b0e808;
+    color:#68c004;
 }
 .overlay .btn{
-    background-color: #b0e808;
+    background-color: #68c004;
 }
 
 
@@ -73,7 +76,7 @@ nav img{
     padding-left:  20px;
 }
 .content-right .btn{
-    background-color: #b0e808;
+    background-color: #68c004;
 }
 
 .left-content{
@@ -148,7 +151,7 @@ nav img{
 .service-overlay{
     position: absolute;
     inset:0;
-    background-color: rgba(233, 224, 224, 0.778);
+    background-color: #e9e8dc;
 }
 .services{
     padding-top: 105px;
@@ -158,12 +161,16 @@ nav img{
      font-size: clamp(14px, 6vw, 55px);
 }
 .circle{
-    background-color: #b0e808;
+    background-color: #74d217;
     height: 80px;
     width: 80px;
 }
 .grid-container{
-    padding: 40px 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10px;
     
 }
 .grid{
@@ -174,7 +181,7 @@ nav img{
   text-align: center;
   background-color: white;
   border-radius: 15px;
-  max-width: 350px;
+  max-width: 410px;
   padding-top: 60px;
   padding-left: 62px;
   padding-right: 62px;
@@ -252,20 +259,15 @@ footer h4 {
 
 @media (max-width:768px){
      
-      *{
-        overflow-X:hidden;
-      }
-    .about-img-1,
-    .about-img-2,
-    .about-img-3{
-        position: static;   
-        margin: 15px auto;
-    }
+   
      .left-content{
+        position:relative;
         padding-bottom: 50px;
+       
     }
     .service-overlay{
         position: static;
+       
     }
     .service-section{
         position: static;
@@ -273,25 +275,59 @@ footer h4 {
     .service-section img{
         display: none;
     }
-    .grid-container {
+    .services{
+    padding-top: 40px;
+    padding-left: 20px;
+    text-align: center;
+    }
+      .grid-container{
         display: flex;
         flex-direction: column;
-        
-       
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
     }
+    .grid{
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
     .experiance{
-        position: static;
+        
         margin: 20px auto;
     }
 
     .dot-box{
         display: none; 
     }
-    
+    footer h4{
+        padding-top:20px;
+    }
     
 
+
+
+   
 
 }
+ @media (max-width:580px){
+       .container-custom{
+        padding-top: 80px;
+       }
+        .about-img-3,.about-img-1,.about-img-2{
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+            position: static;
+        }
+         .experiance{
+            position: static;
+
+        }
+    }
+
 /*DESKTOP*/
 
 @media (max-width: 1200px) {
@@ -299,14 +335,6 @@ footer h4 {
         padding-bottom:50px;
     }
    
-    
-}
-
-@media (min-width:1200px) {
-    .navbar-collapse{
-        padding-left: 160px;
-    }
-    
     
 }
 
@@ -332,9 +360,7 @@ footer h4 {
         gap: 8px;
         
     }
-    .grid{
-        min-width: 500px;
-    }
+
     .experiance{
       bottom:100px;
     }
@@ -344,6 +370,9 @@ footer h4 {
     
     .content-right{
         text-align: center;
+    }
+    footer h4{
+        padding-top:20px;
     }
    
      
