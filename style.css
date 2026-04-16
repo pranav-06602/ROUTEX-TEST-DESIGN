@@ -11,7 +11,7 @@
 
 body{
    
-    font-family:'Montserrat', sans-serif ;
+    font-family:'poppins', sans-serif ;
 }
 .navbar-brand{
     font-size: 30px;
@@ -63,6 +63,9 @@ nav img{
 .overlay .btn{
     background-color: #68c004;
 }
+.overlay .btn:hover{
+    background-color:#5fa70d ;
+}
 
 
 
@@ -76,7 +79,13 @@ nav img{
     padding-left:  20px;
 }
 .content-right .btn{
-    background-color: #68c004;
+    background-color: #71cd08;
+}
+.content-right .btn:active,
+.content-right .btn:focus{
+     background-color: #5fa70d ;
+     color: #fff;
+     
 }
 
 .left-content{
@@ -155,7 +164,7 @@ nav img{
 }
 .services{
     padding-top: 105px;
-    padding-left: 90px;
+    padding-left: 130px;
 }
 .service-section p{
      font-size: clamp(14px, 6vw, 55px);
@@ -205,6 +214,7 @@ footer{
 }
 footer .container{
   padding-top: 90px;
+  
 }
 .bi-check{
     font-size: 25px;
@@ -226,6 +236,9 @@ footer .gallery img{
     object-fit: cover;
     overflow: hidden;
 }
+.gallery-txt {
+    padding-left:40px ;
+}
 .footer-bottom{
   color: #cfcfcf;
   border-top: 1px solid gray;
@@ -236,11 +249,16 @@ footer .gallery img{
     padding: 15px;
     
 }
-.social-icons i {
+.social-icons a {
   margin-right: 12px;
   font-size: 15px;
   cursor: pointer;
+  color: white;
 }
+.social-icons a:hover{
+    color: #71cd08;
+}
+
 footer p,
 .footer-links a,
 footer li {
@@ -259,9 +277,26 @@ footer h4 {
 
 @media (max-width:768px){
      
-   
+
+  .about-img-1,
+    .about-img-2,
+    .about-img-3{
+        position:static;
+        width:100%;
+        max-width:100%;
+        padding:10px;
+    }
+    .experiance{
+    position: static;
+    
+}
+
+    .left-content{
+        min-height:auto;
+        padding-bottom:30px;
+    }
      .left-content{
-        position:relative;
+        position:static;
         padding-bottom: 50px;
        
     }
@@ -271,6 +306,7 @@ footer h4 {
     }
     .service-section{
         position: static;
+        width: 100%;
     }
     .service-section img{
         display: none;
@@ -334,30 +370,144 @@ footer h4 {
      .service-section{
         padding-bottom:50px;
     }
+    .gallery-txt{
+        padding: 0;
+    }
    
     
 }
 
-/* TABLET*/
 
-@media (max-width:990px) {
+
+@media (min-width: 993px) and (max-width: 1265px){
+
+    .grid-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .grid{
+        width:48%;
+        max-width:none;
+    }
+
+    .grid:nth-child(3){
+        width:100%;
+        max-width:600px;
+    }
+
+    .service-section{
+        min-height:1100px; /* increase if needed */
+    }
+    .gallery-txt{
+        padding: 10px;
+    }
+}
+
+/* TABLET*/
+/* Footer side/left align only on 992px and below */
+@media (max-width:992px){
+
+  footer .row > div{
+    text-align:left !important;
+    margin-bottom:30px;
+  }
+
+  footer h3,
+  footer h4{
+    text-align:left !important;
+    padding-top:0;
+  }
+
+  /* gallery heading */
+  .gallery-txt{
+    padding-left:0 !important;
+    text-align:left !important;
+  }
+
+  /* gallery images left side */
+  .row-1,
+  .row-2{
+    justify-content:flex-start !important;
+  }
+
+  /* bottom copyright section */
+  .footer-bottom .container{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start !important;
+    text-align:left !important;
+    gap:12px;
+  }
+
+  .footer-links{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start !important;
+  }
+
+  .footer-links a{
+    padding:6px 0;
+  }
+}
+
+@media (min-width:769px) and (max-width:992px) {
 
    
-    
+   .about-img-1{
+    position: absolute;
+    left: 190px;
+    top: -71px;
+    max-width: 300px;
+    z-index: 1;
+}
+.about-img-2{
+    position: absolute;
+    left: 510px;
+    top: -10px;
+    max-width: 241px;
+}
+.about-img-3{
+    position: absolute;
+    top: 260px;
+    left: 360px;
+    z-index: 3;
+    max-width: 311px;
+}
+.experiance{
+    background-color: #b0e808;
+    position: absolute;
+    bottom: 40px;
+    left: 175px;
+}
+.dot-box {
+    position: absolute;
+    top: 267px;
+    left: 170px;
+    width: 300px;
+    height: 300px;
+
+    background-image: radial-gradient(#b0e808 1px, transparent 2px);
+    background-size: 18px 18px;
+}
     .service-overlay{
         position: static;
     }
     .service-section {
-        position: static;
+       position: relative;
+        min-height: 950px; /* adjust as needed */
     }
     .service-section img{
     display: none;
     }
     .grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
+        display:flex;
+        flex-direction: row;   /* ✅ keep row */
+        flex-wrap: wrap;       /* ✅ allow next line */
+        justify-content: center;
+        gap:20px;
         
     }
 
