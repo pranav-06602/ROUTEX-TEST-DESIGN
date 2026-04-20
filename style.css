@@ -180,8 +180,12 @@ nav img{
     justify-content: center;
     gap: 20px;
     padding: 40px 10px;
-    
+    margin-left: 0;
+    margin-right: 0;
 }
+    
+
+    
 .grid{
   display: flex;  
   flex-direction: column;
@@ -271,6 +275,9 @@ footer h3 {
 footer h4 {
   font-size: clamp(16px, 1.5vw, 22px);
 }
+ footer p{
+        font-size: 15px;
+    }
 
 
 /*MOBILE*/
@@ -341,6 +348,7 @@ footer h4 {
     footer h4{
         padding-top:20px;
     }
+   
     
 
 
@@ -379,7 +387,7 @@ footer h4 {
 
 
 
-@media (min-width: 993px) and (max-width: 1265px){
+@media (min-width: 993px) and (max-width: 1280px){
 
     .grid-container{
         display:flex;
@@ -399,7 +407,7 @@ footer h4 {
     }
 
     .service-section{
-        min-height:1100px; /* increase if needed */
+        height:1100px; /* increase if needed */
     }
     .gallery-txt{
         padding: 10px;
