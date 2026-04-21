@@ -209,20 +209,10 @@ nav img{
 }
 /*FOOTER*/
 
-footer{
-    width: 100%;
-    border-top: 2px solid  #b0e808 ;
-    background-color: #084031;
-    color: #cfcfcf;
-    
-}
-footer .container{
-  padding-top: 90px;
-  
-}
-.bi-check{
-    font-size: 25px;
-    color: #b0e808;
+
+
+.bi-check2{
+   color: #b0e808;
 }
 .bi-chevron-right{
     font-size: 25px;
@@ -240,19 +230,7 @@ footer .gallery img{
     object-fit: cover;
     overflow: hidden;
 }
-.gallery-txt {
-    padding-left:40px ;
-}
-.footer-bottom{
-  color: #cfcfcf;
-  border-top: 1px solid gray;
-}
-.footer-links a{
-    color: #cfcfcf ;
-    text-decoration: none;
-    padding: 15px;
-    
-}
+
 .social-icons a {
   margin-right: 12px;
   font-size: 15px;
@@ -263,21 +241,7 @@ footer .gallery img{
     color: #71cd08;
 }
 
-footer p,
-.footer-links a,
-footer li {
-  font-size: clamp(12px, 1vw, 15px);
-}
-footer h3 {
-  font-size: clamp(18px, 2vw, 28px);
-}
 
-footer h4 {
-  font-size: clamp(16px, 1.5vw, 22px);
-}
- footer p{
-        font-size: 15px;
-    }
 
 
 /*MOBILE*/
@@ -363,9 +327,6 @@ footer h4 {
 
     .dot-box{
         display: none; 
-    }
-    footer h4{
-        padding-top:20px;
     }
    
     
@@ -480,16 +441,6 @@ footer h4 {
     width: 100% !important;
   }
 
-  footer .row > div{
-    text-align:left !important;
-    margin-bottom:30px;
-  }
-
-  footer h3,
-  footer h4{
-    text-align:left !important;
-    padding-top:0;
-  }
 
   /* gallery heading */
   .gallery-txt{
@@ -503,24 +454,8 @@ footer h4 {
     justify-content:flex-start !important;
   }
 
-  /* bottom copyright section */
-  .footer-bottom .container{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start !important;
-    text-align:left !important;
-    gap:12px;
-  }
 
-  .footer-links{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start !important;
-  }
-
-  .footer-links a{
-    padding:6px 0;
-  }
+  
 }
 
 @media (min-width:769px) and (max-width:992px) {
@@ -622,7 +557,6 @@ footer h4 {
         padding-right: 8px !important;
     }
 }
-
 
 
 
